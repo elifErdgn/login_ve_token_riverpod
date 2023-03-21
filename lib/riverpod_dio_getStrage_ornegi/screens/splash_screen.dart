@@ -17,17 +17,16 @@ class _SplashState extends State<Splash> {
 
   @override
   void initState() {
-  Future.delayed(Duration(seconds: 2), (){
-    if(box.read("token") != null){
-      Grock.toRemove(Home());
-    } else {
-      Grock.toRemove(LoginPage());
-    }
-    ;
-  },);
+    Future.delayed(Duration(seconds: 2), () {
+      if (box.read("token") != null) {
+        Grock.toRemove(Home());
+      } else {
+        Grock.toRemove(LoginPage());
+      }
+    });
     super.initState();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return const Placeholder();

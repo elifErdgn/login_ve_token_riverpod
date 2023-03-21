@@ -3,7 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:grock/grock.dart';
 
-import 'projects/riverpod_token/screens/login_page.dart';
+import 'riverpod_dio_getStrage_ornegi/screens/login_page.dart';
+
 
 
 void main() async {
@@ -13,6 +14,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
